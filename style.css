@@ -4,9 +4,9 @@ html { box-sizing: border-box; }
 body{
     margin: 0;
     padding: 20px;
-    width: 500px;
+    width: 100%; 
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;   
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -55,9 +55,6 @@ hr{
     margin-bottom: 30px;
 }
 
-
-
-
 .tlacitko{
 	border-radius: 20px;
     display: block;
@@ -67,7 +64,7 @@ hr{
     text-align: center;
 	padding:10px 30px;
     margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;  
    
 }
 
@@ -85,7 +82,7 @@ hr{
 
 }
 
-.nabidka{
+.karta{
     display: flex;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -93,12 +90,70 @@ hr{
     margin-bottom: 15px;
 }
 
-.nabidka p{
-    padding: 32px 20px 20px 32px;
+.karta p{
+    padding: 32px 20px 20px 0px;
     font-size: 13px;
     margin: 0;
 }
 
-.nabidka img{
-    padding: 20px 0 20px 20px;
+ .karta img{
+    padding: 20px 0 20px 0px;
+    
+} 
+
+.icon{
+    width: 94px;
+
+}
+
+.icon img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*version tablet*/
+@media screen and (min-width: 640px){
+    .karty-kancelar,
+    .karty-delegat{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .kancelar,
+    .delegat{
+        display: block;
+        flex: 0 0 calc((100% - 40px) / 3);
+    }
+
+    .karta p{
+        padding: 0 15px 20px 15px;
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .icon{
+        width: 100%;
+    }
+
+    .tlacitko{
+        display: inline-block;
+        
+    }
+
+    .adventure{
+        margin-right: 20px;
+    }
+
+    .prvni,
+    .druhy,
+    .treti{
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+
 }
