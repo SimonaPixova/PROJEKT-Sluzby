@@ -2,5 +2,103 @@ html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
 body{
+    margin: 0;
+    padding: 20px;
+    width: 500px;
+	margin-left: auto;
+	margin-right: auto; 
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+	line-height: 1.5;
+    background-color: #FAFAFA;
+	color:#8B8B8B;
+
+}
+
+.foto-turista{
+    width: 350px;
+    margin: 60px 75px 40px 75px;
+    
+}
+
+h1{
+    font-size: 28px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+  
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+hr{
+    width: 80px;
+    background-color: #407BFF;
+    border-width: 0px;
+    height: 3px;
+    color: #407BFF;
+    margin-bottom: 30px;
+ 
+}
+
+.odstavec{
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.tlacitko{
+	border-radius: 20px;
+    display: block;
+	color: white;
+    font-size: 14px;
+	text-decoration: none;
+    text-align: center;
+	padding:10px 30px;
+    margin-left: auto;
+	margin-right: auto; 
+   
+}
+
+.adventure{
+    background-color: #407BFF;
+    margin-bottom:10px;
+    width: 200px;
+
+
+}
+
+.beach{
+    background-color:#8B8B8B ;
+    width: 240px;
+
+}
+
+.nabidka{
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: #407BFF1F 0px 4px 6px;
+    margin-bottom: 15px;
+}
+
+.nabidka p{
+    padding: 32px 20px 20px 32px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.nabidka img{
+    padding: 20px 0 20px 20px;
 }
