@@ -26,9 +26,8 @@ h1{
     font-size: 28px;
     color: #000000;
     margin-top: 40px;
-    margin-bottom: 10px;
-    
-  
+    margin-bottom: 30px;
+
 }
 
 h2{
@@ -39,13 +38,25 @@ h2{
     margin-bottom: 15px;
 }
 
-hr{
+/* hr{
     width: 80px;
     background-color: #407BFF;
     border-width: 0px;
     height: 3px;
     color: #407BFF;
     margin-bottom: 30px;
+ 
+} */
+
+h1::after{
+    display: block;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color:#407BFF;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
  
 }
 
@@ -166,15 +177,24 @@ hr{
 
     h1{
         margin-top: 30px;
+        margin-bottom: 40px;
     }
 
     h2{
         margin-top:80px;
     }
 
-    .karta{
+    .palma,
+    .slunecnik,
+    .mapa,
+    .kaktus,
+    .letadlo{
         margin-bottom: 0;
     }
+/* 
+    .karta{
+        margin-bottom: 0;
+    } */
 
  
 
@@ -218,6 +238,7 @@ hr{
         width: 430px;
         text-align: left;
         margin-left: 60px;
+      
     }
 
     .sekce-delegat{
@@ -234,11 +255,11 @@ hr{
 
     }
 
-    hr{
+    /* hr{
         width: 80px;
         margin-left: 0;
 
-    }
+    } */
 /*v tablet verzi nastavena pevná šířka na odstavce, nyní způsobuje, že text 
 vytéka z boxu, nastavit šířku odstavce na velikost boxu*/
     .prvni,
@@ -260,12 +281,20 @@ vytéka z boxu, nastavit šířku odstavce na velikost boxu*/
     }
 
     h1{
-        margin: 0;
+        margin-top: 30px;
+    }
+
+    h1::after{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    h2{
+        margin-top: 30px;
     }
    
-    h2{
-        margin-top: 0px;
-    }
+   
+   
 /*obrázek turisty vycentrovaný na střed rodičovského prvku*/
     .foto-turista{
         display: block;
@@ -280,10 +309,16 @@ vytéka z boxu, nastavit šířku odstavce na velikost boxu*/
 
    
 
-    .karta,
-    .odstavec{
-        margin-bottom: 0;
+    /* .karta{
+        margin-bottom: 15px;
     }
+    */
+    /*.odstavec{
+        margin-bottom: 0px;
+    } */
 
 
 }
+
+
+
